@@ -5,7 +5,7 @@
   padding: 0;
   text-decoration: none;
   transition: 0.1 linear;
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap");
 
@@ -56,12 +56,6 @@ header {
   z-index: 1000;
   background: var(--cor-primaria);
   box-shadow: var(--sombra-suave);
-}
-
-@media (max-width: 786px) {
-  main {
-    padding-top: 380px; /* normalmente precisa ser maior */
-  }
 }
 
 /* CABEÇALHO */
@@ -142,7 +136,6 @@ p {
   transition: 0.4s;
   border: 2px solid white;
   box-sizing: border-box;
-  
 }
 
 /* SOBRE O REFORÇO */
@@ -195,7 +188,6 @@ span {
   }
 }
 
-
 .zoomimg {
   height: 40rem;
   width: 300px; /* define largura real */
@@ -217,37 +209,50 @@ span {
 }
 
 iframe {
-display: block;
-margin: 0 auto;
-background-color: yellowgreen;
-background-size: cover;
-max-width: 99vw;
+  display: block;
+  margin: 0 auto;
+  background-color: yellowgreen;
+  background-size: cover;
+  max-width: 99vw;
 }
-
 
 /* trava qualquer overflow horizontal */
-html, body {
-  width: 100%;
-  overflow-x: hidden;
-}
 
 @media (max-width: 786px) {
-
   div.titulo {
-    flex-direction: column;   /* empilha */
-    align-items: center;      /* centraliza */
+    flex-direction: column; /* empilha */
+    align-items: center; /* centraliza */
     text-align: center;
     gap: 10px;
   }
 
   div.titulo h1 {
-    font-size: 1rem;          /* diminui no celular */
+    font-size: 1.5rem; /* diminui no celular */
     word-spacing: normal;
     margin-top: 10px;
   }
 
   section.cabeçalho img {
-    width: 100px;             /* menor no mobile */
+    width: 100px; /* menor no mobile */
   }
 
+  main {
+    padding-top: 180px;
+  }
+
+  .redes img {
+    width: 30px;
+  }
+}
+
+.fundolinha {
+  background-color: #056cf200;
+  height: 25px;
+  max-width: 85vw;
+  background-image: url("imagens/noite-estrelada.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  border-radius: 150px;
+  margin: 40px 0;
 }
