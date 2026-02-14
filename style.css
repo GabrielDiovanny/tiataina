@@ -241,13 +241,13 @@ html, body {
   }
 
   div.titulo h1 {
-    font-size: 2rem;          /* diminui no celular */
+    font-size: 1rem;          /* diminui no celular */
     word-spacing: normal;
     margin-top: 10px;
   }
 
   section.cabeçalho img {
-    width: 140px;             /* menor no mobile */
+    width: 100px;             /* menor no mobile */
   }
 
 }
