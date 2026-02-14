@@ -223,3 +223,53 @@ background-color: yellowgreen;
 background-size: cover;
 max-width: 99vw;
 }
+
+
+/* trava qualquer overflow horizontal */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+@media (max-width: 786px) {
+
+  /* cabeçalho não estoura */
+  div.titulo {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+  }
+
+  section.cabeçalho img {
+    width: 140px;
+  }
+
+  nav.navbar {
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 12px 10px;
+  }
+
+  /* conteúdo não “gruda” nem estoura */
+  section.sobrereforço {
+    padding: 0 16px;
+  }
+
+  /* NÃO empurra pro lado */
+  div.zoomimg {
+    margin: 24px auto 0;
+  }
+
+  /* texto ocupa a tela */
+  main p {
+    width: 100%;
+    min-width: 0;
+  }
+
+  /* redes: cola na direita sem estourar */
+  .redes {
+    right: 10px;
+    padding: 8px;
+  }
+}
