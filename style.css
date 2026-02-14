@@ -115,6 +115,25 @@ p {
   font-size: 40px;
 }
 
+.redes {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  right: 20px;
+  top: 24%;
+  gap: 10px;
+  z-index: 999;
+  background-color: #0544f2;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.redes img {
+  width: 60px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
 /* SOBRE O REFORÇO */
 
 main {
@@ -140,7 +159,7 @@ section p {
   padding-top: 20px;
   line-height: 2.5rem;
   text-indent: 3rem;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 span {
@@ -148,47 +167,49 @@ span {
   text-align: left;
 }
 
-
-
-
-
 #textofoto {
   margin-right: 4rem;
 }
 
 @media (max-width: 786px) {
-    span {
-      display: block;
-    }
-    main p {
-      margin-right: 0rem;
-      letter-spacing: normal;
-      word-spacing: normal;
-      min-width: 400px;
-    }
-    div.zoomimg {
-      margin-top: 4rem;
-      margin-left: 3rem;
-    }
+  span {
+    display: block;
+  }
+  main p {
+    margin-right: 0rem;
+    letter-spacing: normal;
+    word-spacing: normal;
+    min-width: 400px;
+  }
+  div.zoomimg {
+    margin-top: 4rem;
+    margin-left: 3rem;
+  }
 }
 
-.zoomimg{
+.zoomimg {
   height: 40rem;
-  width: 300px;        /* define largura real */
+  width: 300px; /* define largura real */
   overflow: hidden;
   border-radius: 40px;
-  flex-shrink: 0;      /* impede o flex de esmagar */
+  flex-shrink: 0; /* impede o flex de esmagar */
   box-shadow: 1px 1px 15px 2px #0583f2;
 }
-.zoomimg img{
+.zoomimg img {
   height: 100%;
-  width: auto;            /* mantém proporção */
+  width: auto; /* mantém proporção */
   display: block;
   transition: transform 0.7s ease;
   transform-origin: center;
-  
 }
 
-.zoomimg img:hover{
+.zoomimg img:hover {
   transform: scale(1.07);
+}
+
+iframe {
+display: block;
+margin: 0 auto;
+background-color: yellowgreen;
+background-size: cover;
 }
