@@ -233,43 +233,21 @@ html, body {
 
 @media (max-width: 786px) {
 
-  /* cabeçalho não estoura */
   div.titulo {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    flex-direction: column;   /* empilha */
+    align-items: center;      /* centraliza */
     text-align: center;
+    gap: 10px;
+  }
+
+  div.titulo h1 {
+    font-size: 2rem;          /* diminui no celular */
+    word-spacing: normal;
+    margin-top: 10px;
   }
 
   section.cabeçalho img {
-    width: 140px;
+    width: 140px;             /* menor no mobile */
   }
 
-  nav.navbar {
-    flex-wrap: wrap;
-    gap: 8px;
-    padding: 12px 10px;
-  }
-
-  /* conteúdo não “gruda” nem estoura */
-  section.sobrereforço {
-    padding: 0 16px;
-  }
-
-  /* NÃO empurra pro lado */
-  div.zoomimg {
-    margin: 24px auto 0;
-  }
-
-  /* texto ocupa a tela */
-  main p {
-    width: 100%;
-    min-width: 0;
-  }
-
-  /* redes: cola na direita sem estourar */
-  .redes {
-    right: 10px;
-    padding: 8px;
-  }
 }
