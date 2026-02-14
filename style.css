@@ -126,12 +126,22 @@ p {
   background-color: #0544f2;
   padding: 10px;
   border-radius: 20px;
+  box-shadow: 2px 2px 20px 10px rgb(255, 255, 255);
 }
 
 .redes img {
-  width: 60px;
+  width: 40px;
   cursor: pointer;
   border-radius: 20px;
+  position: relative;
+}
+
+.redes img:hover {
+  transform: scale(1.2);
+  transition: 0.4s;
+  border: 2px solid white;
+  box-sizing: border-box;
+  
 }
 
 /* SOBRE O REFORÇO */
@@ -212,4 +222,5 @@ display: block;
 margin: 0 auto;
 background-color: yellowgreen;
 background-size: cover;
+max-width: 100vw;
 }
