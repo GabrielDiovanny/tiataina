@@ -131,11 +131,19 @@ p {
   position: relative;
 }
 
+
+
+  
+}
+
 .redes img:hover {
+  display: inline;
+  background-color: #0583f2;
   transform: scale(1.2);
   transition: 0.4s;
   border: 2px solid white;
   box-sizing: border-box;
+  transform: translateX(-70%);
 }
 
 /* SOBRE O REFORÇO */
@@ -209,11 +217,12 @@ span {
 }
 
 iframe {
-  display: block;
-  margin: 0 auto;
+
   background-color: yellowgreen;
   background-size: cover;
   max-width: 99vw;
+  display: flex;
+  justify-content: cen;
 }
 
 /* trava qualquer overflow horizontal */
@@ -242,7 +251,10 @@ iframe {
 
   .redes img {
     width: 30px;
+    
   }
+
+
 }
 
 .fundolinha {
@@ -254,4 +266,10 @@ iframe {
   background-attachment: fixed;
   border-radius: 190px;
   margin: 70px auto;
+}
+
+.iiframe {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(165, 231, 165);
 }
