@@ -246,13 +246,12 @@ iframe {
 }
 
 .fundolinha {
-  background-color: #056cf200;
   height: 25px;
-  max-width: 85vw;
+  max-width: 40vw;
   background-image: url("imagens/noite-estrelada.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  border-radius: 150px;
-  margin: 40px 0;
+  border-radius: 190px;
+  margin: 70px auto;
 }
