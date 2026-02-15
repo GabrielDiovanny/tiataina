@@ -134,7 +134,7 @@ p {
 
 
   
-}
+
 
 .redes img:hover {
   display: inline;
@@ -165,7 +165,7 @@ section #titulo {
   padding: 20px 0;
 }
 
-section p {
+section#p p {
   font-size: 25px;
   font-weight: lighter;
   padding-top: 20px;
@@ -272,4 +272,23 @@ iframe {
   display: flex;
   justify-content: center;
   background-color: rgb(165, 231, 165);
+}
+
+section.cards {
+  margin: 7vw auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#cards {
+  display: block;
+  box-shadow: 1px 1px 8px 2px rgb(25, 0, 255);
+  border-radius: 20px;
+  justify-content: left;
+}
+
+#cards p {
+  margin: 0;
+  padding: 0;
+
 }
